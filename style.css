@@ -1,0 +1,290 @@
+
+body {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 0 5%;
+    background-color: rgb(0, 0, 145);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-grow: 2;
+    list-style: none;
+    align-self: center;
+    padding: 0;
+}
+
+.menu li {
+    padding: 1em 2em;
+}
+
+.navbar {
+    flex-grow: 7;
+    align-self: center;
+    padding: 1em 2em;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+header li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+
+ /*Photo section*/
+.photo {
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(18, 18, 29);
+    width: 100%;
+}
+
+.profile-image img{
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    z-index: 9999;
+    border:solid 2px rgb(0, 0, 145);
+}
+
+.profile-image img:hover {
+    transform: scale(1.06, 1.06);
+}
+
+.content-center {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.subtext {
+    color:rgba(255, 255, 255);
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 75%;
+    text-align: center;
+}
+
+.photo-btn a{
+    padding: 11px 22px;
+    background-color: rgb(0, 0, 145);
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    font-weight: 300;
+}
+
+ /*About section*/
+#about .container {
+    margin: 5%;
+    padding: 1em;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.card p, .card .basic {
+    width: 90%;
+}
+
+.basic .row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.caption {
+    font-weight: 300;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Professional Skills Style */
+#skills .container {
+    margin: 0 5%;
+    padding: 1em;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#skills .skill {
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+    color:rgb(0, 0, 145);
+}
+
+#skills .card {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.percent {
+    text-align: right;
+}
+
+
+@media screen and (min-width: 800px){
+    .card {
+        width: 50%;
+    }
+}
+
+/*Progress bar*/
+.progress {
+    background: #ddd;
+    height: 20px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.progress-done { 
+    font-weight: bolder;
+    color: #fff;
+    height: 100%;
+    background: linear-gradient(to left,rgb(2, 203, 253),rgb(195, 243, 255));
+    border-radius: 20px;
+    display: flex;
+}
+
+.progress-first {
+    width: 90%;
+    animation: progressing1 3s 1;;
+}
+
+.progress-sec {
+    width: 80%;
+    animation: progressing2 3s 1;;
+}
+
+.progress-third {
+    width: 50%;
+    animation: progressing3 3s 1;;
+}
+
+.progress-fourth {
+    width: 70%;
+    animation: progressing4 3s 1;;
+}
+
+@keyframes progressing1 {
+    0% {width: 0%;left:0;right:0}
+    50% { width: 100%;left:0;right:0} 
+    90% { width: 90%;left:100%;right:0} 
+}
+
+@keyframes progressing2 {
+    0% {width: 0%;left:0;right:0}
+    50% { width: 100%;left:0;right:0} 
+    90% { width: 80%;left:100%;right:0} 
+}
+
+@keyframes progressing3 {
+    0% {width: 0%;left:0;right:0}
+    50% { width: 100%;left:0;right:0} 
+    90% { width: 50%;left:100%;right:0} 
+}
+
+@keyframes progressing4 {
+    0% {width: 0%;left:0;right:0}
+    50% { width: 100%;left:0;right:0} 
+    90% { width: 70%;left:100%;right:0} 
+}
+
+/*Contact*/
+#contact {
+    margin: 5% 0 0 0;
+    background-image: url(bg-contact.png);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5% 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(18, 18, 29);
+    width: 100%;
+}
+
+#contact .container {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    text-align: center;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+    min-width: 280px;
+    height: 350px;
+}
+
+#contact .row {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+input.form-control, textarea.form-control {
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    height: 25px;
+    align-self: center;
+    font-size: 1em;
+    padding: 0 5px;
+    width: 50%;
+}
+
+button#btn-send {
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    color: black;
+    height: 45px;
+    width: 25%;
+    box-shadow: none;
+    margin-top: 2%;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+button#btn-send:active {
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    color: black;
+    text-align: center;
+}
