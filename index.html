@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV Alina Prokopenko</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar"><a class="" href="#">Creative CV</a>
+            </div>
+            <ul class="menu">
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="photo">
+        <div class="content-center">
+            <div class="profile-image"><img src="my-photo.jpeg" alt="Photo"/></div>
+            <br>
+            <h2>Alina Prokopenko</h2>
+            <p class="subtext">No-code Developer, Trainee Front-end Developer, Student</p>
+            <br>
+            <div class="photo-btn">
+                <a href="tel:+380980973593">Hire Me</a>
+                <a href="CV Alina Prokopenko EN.pdf" target="_blank" download>Download CV</a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <div class="card">
+                <h2>About</h2>
+                <p class="caption">Hello! I am Alina Prokopenko. No-code Developer, Trainee Front-end Developer, Student.</p>
+                <p class="caption">7 years ago I was a student in Lublin, but I didn’t like it and I’m back in Ukraine. So I can speak polish on basic level. 
+                    I’m a student of the last year at Taras Shevchenko National University of Kyiv. I’m studying cybersecurity.
+                    I really like front-end programming because it’s cool to see that your brains can product something useful for others. 
+                    And you can be everywhere in the world for this job.
+                    In my free time I’m a responsible citizen. This year I’ve submit a project for public budget in my town. 
+                    My favorite series are Friends, The Big Bang theory, This is us.</p>
+            </div>
+            <div class="card">
+                <h2>Basic Information</h2>
+                <div class="basic">
+                    <div class="row">
+                        <div class="text-uppercase">Age:</strong></div>
+                        <div class="caption">23</div>
+                    </div>
+                    <div class="row">
+                        <div class="text-uppercase">Email:</strong></div>
+                        <div class="caption">alina.chukevich98@gmail.com</div>
+                    </div>
+                    <div class="row">
+                        <div class="text-uppercase">Phone:</strong></div>
+                        <div class="caption">+38 (098) 097 - 35 - 93</div>
+                    </div>
+                    <div class="row">
+                        <div class="text-uppercase">Address:</strong></div>
+                        <div class="caption">Kyiv, Ukraine</div>
+                    </div>
+                    <div class="row">
+                        <div class="text-uppercase">Languages:</strong></div>
+                        <div class="caption">Ukrainian, English, German, Polish</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h2 style="text-align: center;">Basic Information</h2>
+        <div class="container">
+            <div class="card">
+                <div class="row">
+                    <div class="skill">
+                        <p class="text-uppercase">HTML</p>
+                        <p class="percent">90%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-done progress-first"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skill">
+                        <p class="text-uppercase">CSS</p>
+                        <p class="percent">80%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-done progress-sec"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skill">
+                        <p class="text-uppercase">JS</p>
+                        <p class="percent">50%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-done progress-third"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skill">
+                        <p class="text-uppercase">PHOTOSHOP</p>
+                        <p class="percent">70%</p>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-done progress-fourth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2 >Contact Me</h2>
+            <p>Feel free to contact me</p>
+            <form id ="contactform" action="" method="POST">
+                <div class="row">
+                    <input id="Name" class="form-control" type="text" name="name" placeholder="Name" required="required"/>
+                </div>
+                <div class="row">
+                    <input id="Subject" class="form-control" type="text" name="Subject" placeholder="Subject" required="required"/>
+                </div>
+                <div class="row">
+                    <input id="Email" class="form-control" type="email" name="_replyto" placeholder="E-mail" required="required"/>
+                </div>
+                <div class="row">
+                    <textarea id="Message" class="form-control" name="message" placeholder="Your Message" required="required"></textarea>
+                </div>
+                <div class="row">
+                    <button id="btn-send" type="submit" onclick="functionbtn()">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <h3>Alina Prokopenko</h3>
+        <div>
+            <p>&copy; All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function functionbtn() {
+            var Form = document.getElementById('contactform');
+            if (Form.checkValidity() == true) {
+                alert("From sent! I'll contact you as soon as possible!")
+            }
+            
+            var response = {
+                name: document.getElementById('Name'),
+                subject: document.getElementById('Subject'),
+                email: document.getElementById('Email'),
+                msg: document.getElementById('Message') 
+            }
+
+        };
+      </script>
+</body>
+</html>
